@@ -5,14 +5,40 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>My PWA App</title>
   <link rel="manifest" href="manifest.json" />
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="style.css" />
   <meta name="theme-color" content="#0d1117"/>
 </head>
 <body>
-  <h1>📱 Welcome to My PWA!</h1>
-  <p>This app can work offline and be installed on your device.</p>
+    <img src="img/cropped-university-of-management-and-Technology-8 (1).png" alt="logo" class="logo">
+    <nav>
+        <div id="menu-icon" class="menu-icon" onclick="toggleMenu()">☰</div>
+        <div class="nav-links">
+            <a href="#"  class="fade-in-a1">Admin</a>
+            <a href="#" class="fade-in-a2">Student</a>
+            <a href="#"  class="fade-in-a3">Lecturer</a>
+            <a href="#"  class="fade-in-a4">HOD</a>
+            <a href="#" class="fade-in-a5">Dean</a>
+        </div>
+    </nav>
+    <hr>
+    <div class="content">
+        <div>
+            <h1 class="fade-in">Welcome to Weldios<br>University</h1>
+            <div class="container">
+                <div class="horizontal-div">
+                    <h3 class="fade-in-1">Contact Number</h3>
+                    <p class="fade-in-2">+234 9035023394</p>
+                </div>
+                <div class="vertical-line"></div>
+                <div class="horizontal-div">
+                    <h3 class="fade-in-1">Email Address</h3>
+                    <p class="fade-in-2">eniolad206@gmail.com</p>
+                </div>
+            </div>
+        </div>
+    </div>
 
-  <script>
+  <script src="Home.js">
     if ("serviceWorker" in navigator) {
       navigator.serviceWorker.register("service-worker.js").then(() => {
         console.log("✅ Service Worker Registered");
