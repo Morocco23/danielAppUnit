@@ -1,6 +1,6 @@
 {
   "name": "My PWA App",
-  "short_name": "PWA App",
+  "short_name": "Heim-R",
   "start_url": "./index.html",
   "display": "standalone",
   "background_color": "#0d1117",
